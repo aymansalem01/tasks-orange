@@ -1,0 +1,19 @@
+body{
+background-color: #FFFF99;
+
+}
+.borderso{
+    border: solid;
+    background-color: white;
+}
+.borderdor{
+    color: red;
+    border: dotted red;
+    background-color: white;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
