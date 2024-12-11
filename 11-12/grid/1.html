@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .item1 { grid-area: header ; }
+    .item2 { grid-area: main; }
+    .item3 { grid-area: right; }
+    .item4 { grid-area: footer; }
+
+    .gri{
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'main main main main right right'
+        'main main main main right right'
+        'main main main main right right'
+        'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #ff0000;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="gri" >
+        <div class="item1" style="height: 70px; background-color:black ;"></div>
+        <div class="item2" style="height: 200px; background-color:orange ;"></div>
+        <div class="item3" style="height: 200px; background-color:green ;"></div>
+        <div class="item4" style="height: 70px; background-color:blue ;"></div>
+        </div>
+</body>
+</html>
