@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexwrap{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .par{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            width: 20%;
+            height: 200px;
+            margin: 1px;
+            justify-content: space-between;
+            align-items: start;
+            }
+        .for{
+            width: 49%;
+            height: 95px;
+            background-color:  #5f5f6b ;
+            align-items: start;
+        }
+        .tworow{
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            height: 95px;
+            background-color:  #5f5f6b ;
+            align-items: start;
+            margin: 2px;
+        }
+        .towcol{
+            display: flex;
+            flex-wrap: wrap;
+            width: 49%;
+            background-color:  #5f5f6b ;
+            height: 200px;
+        }
+        p{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexwrap">
+        <div class="par"><p> item 1 </p> </div>
+        <div class="par">
+            <div class="for"> <p> sub1</p> </div>
+            <div class="for"> <p> sub2</p></div>
+            <div class="for"> <p> sub3</p></div>
+            <div class="for"> <p> sub4</p></div>
+        </div>
+        <div class="par">
+            <div class="for"> <p> sub1</p> </div>
+            <div class="for"> <p> sub2</p></div>
+            <div class="for"> <p> sub3</p></div>
+            <div class="for"> <p> sub4</p></div>
+        </div>
+        <div class="par"> <p>item4</p></div>
+        <div class="par"> <p>item5</p></div>
+        <div class="par">
+            <div class="tworow"> <p>sub1</p> </div>
+            <div class="tworow"> <p> sub2</p> </div>
+        </div>
+        <div class="par">
+            <div class="towcol"> <p>sub1</p></div>
+            <div class="towcol"> <p>sub2</p></div>
+        </div>
+        <div class="par"> <p>item8</p></div>
+        <div class="par">
+            <div class="for"> <p> sub1</p> </div>
+            <div class="for"> <p> sub2</p></div>
+            <div class="for"> <p> sub3</p></div>
+            <div class="for"> <p> sub4</p></div>
+        </div>
+        <div class="par"> <p>item10</p></div>
+        <div class="par"> <p>item11</p> </div>
+        <div class="par">
+            <div class="for"> <p> sub1</p> </div>
+            <div class="for"> <p> sub2</p></div>
+            <div class="for"> <p> sub3</p></div>
+            <div class="for"> <p> sub4</p></div>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
