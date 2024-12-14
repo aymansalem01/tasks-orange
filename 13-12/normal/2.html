@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .top{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25% ;
+            grid-template-rows: auto auto;
+            height: 500px;
+        }
+        .item1{
+            background-image: url(item1.PNG);
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            grid-row: 1 /span 2;
+            grid-column: 1 /  span 2;
+        }
+        .item2{
+            background-image: url(item2.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+            grid-row: 1;
+            grid-column: 3;
+        }
+        .item3{
+            background-color:rgb(68,187,230) ;
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+            position: relative;
+            grid-row: 1;
+            grid-column: 4;
+        }
+        .item4{
+            background-color:rgb(23,179,100) ;
+            background-size: cover;
+            width: 100%;
+            height: 247px;
+            position: relative;
+            grid-row: 2;
+            grid-column: 3;
+        }
+        .item5{
+            background-image: url(item5.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+            grid-row: 2;
+            grid-column: 4;
+        }
+        .uptext{
+            color: white;
+            margin-left: 20px;
+        }
+        .bottomtext{
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .down{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        .card1{
+            background-color: rgb(255,121,0);
+            border-bottom: solid rgb(255,121,0);
+            position: relative;
+            grid-column: 1;
+        }
+        .card2{
+            position: relative;
+            border-bottom: solid rgb(80,190,135) ;
+            grid-column: 2;
+        }
+        .card3{
+            position: relative;
+            border-bottom: solid rgb(62,183,228);
+            grid-column: 3;
+        }
+        .card4{
+            position: relative;
+            border-bottom: solid rgb(172,138,218) ;
+            grid-column: 4;
+        }
+        .card5{
+            position: relative;
+            border-bottom: solid rgb(255,180,230) ;
+            grid-column: 5;
+        }
+        .forspan{ 
+            font-size: 25px;
+            margin-left: 10px;
+            position: absolute; 
+            top: 20px;
+        }
+        .card1>div{
+            display: inline-block;
+            float: left;
+        }
+        .card2>div{
+            display: inline-block;
+            float: left;
+        }
+        .card3>div{
+            display: inline-block;
+            float: left;
+        }
+        .card4>div{
+            display: inline-block;
+            float: left;
+        }
+        .card5>div{
+            display: inline-block;
+            float: left;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="top">
+        <div class="item1">  </div>
+        <div class="item2">   </div>
+        <div class="item3">
+            <div class="uptext">
+                <h1> Orange Extra</h1> 
+                <p> Enjoy the ultimate experience of lifestyle & leisure whith your Orange internet subscribtion </p>
+            </div>
+            <div class="bottomtext">
+                <a href="#"> <span style="border-top: solid white; padding-top: 10px;">Expl</span><span>ore More</span></a>
+            </div>
+        </div>
+        <div class="item4">
+            <div class="uptext">
+                <h1> Smart Life</h1>
+                <p> Wide selection of smart life devices to make your life easier from Orange  </p>
+            </div>
+            <div class="bottomtext">
+                <a href="#"> <span style="border-top: solid white; padding-top: 10px;">Expl</span><span>ore More</span></a>
+            </div>
+        </div>
+            <div class="item5"> </div>
+    </div>
+    <div class="down">
+        <div class="card1">
+            <div style="padding-left: 20px; padding-top: 5px;">
+            <i style=" color: white;  font-size: 60px; border:solid .1px yellow; padding:5px;" class="fa fa-mobile" aria-hidden="true"></i>
+        </div>
+        <div> <span class="forspan" style="color: white;">  Mobile Offers </span> </div>
+        
+        </div>
+
+        <div class="card2">
+            <div>
+                <i style=" font-size: 40px; padding: 10px; margin-top: 10px;" class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <div>
+                <span class="forspan">  internet Offers </span>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div style="padding-top: 5px;">
+                <i style=" font-size: 60px; "  class="fa fa-mobile" aria-hidden="true"></i>
+            </div>
+            <div>
+                <span class="forspan"> Devices </span>
+            </div>
+            
+        </div>
+        <div class="card4">
+            <div>
+                <i style=" font-size: 50px; padding-top: 10px;"  class="fa fa-fighter-jet" aria-hidden="true"></i>
+            </div>
+            <div> 
+                <span class="forspan">  International & Roaming </span>
+            </div>
+        </div>
+
+        <div class="card5">
+            <div>
+                <i style=" font-size: 40px; padding-top: 20px;"  class="fa fa-fax" aria-hidden="true"></i>
+            </div>
+            <div>   
+                <span class="forspan">  Fixed lined </span>
+            </div>
+        </div  >
+
+    </div>
+</body>
+</html>
