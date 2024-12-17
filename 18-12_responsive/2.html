@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            width: 100%;
+            min-height: 100px;
+            display: flex ;
+            justify-content: space-between;
+            font-size: 30px;
+            text-decoration: none;
+            background-color:#333333 ;
+        }
+        .aa{
+            display: flex;
+            padding:40px;
+        }
+        .left{
+            width: 80%;
+            float: left;
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+        .right{
+            width: 18%;
+            float: left;
+            background-color:#333333 ;
+            margin-top: 20px;
+            font-size: 20px;
+            height: 700px;
+            border: solid 2px;
+            color: white;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            
+            
+        }
+        .ele{
+            max-width: 350px;
+            border: solid 2px;
+            margin: 20px;
+        }
+        @media only screen and (max-width: 1000px){
+            .nav{display: block;}
+            .aa{display: block;width: 100%;text-align: center;}
+            .right{display: none;}
+            .left{width: 100%;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="aa"><a href="#">My Website</a> </div>
+        <div  class="aa">
+            <div style="margin-right: 30px;"> <a href="#" >link 1</a></div>
+            <div style="margin-right: 30px;"><a href="#" >link 2</a></div>
+            <div style="margin-right: 30px;"><a href="#" >link 3</a></div>
+        </div>
+    </div>
+    <div class="left">
+        <h1>This is the main heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur consequuntur qui saepe blanditiis iure quod. Aliquam, provident dolores. Earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dicta unde consectetur, eos culpa necessitatibus ducimus aliquam nemo soluta aspernatur a nihil excepturi quos esse harum, voluptatem odio. Dolor blanditiis nihil ipsam.</p>
+        <div class="card">
+            <div class="ele"> <h1 style="background-color: #333333;margin-top: 0px;padding: 5px;color: white;">Card One</h1>
+                <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati accusamus porro mollitia nobis aperiam error nulla repudiandae nesciunt animi?</p>
+            </div>
+            <div class="ele"> <h1 style="background-color: #333333;margin-top: 0px;padding: 5px;color: white;">Card Two</h1>
+                <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati accusamus porro mollitia nobis aperiam error nulla repudiandae nesciunt animi?</p>
+            </div>
+            <div class="ele"> <h1 style="background-color: #333333;margin-top: 0px;padding: 5px;color: white;">Card three</h1>
+                <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati accusamus porro mollitia nobis aperiam error nulla repudiandae nesciunt animi?</p>
+            </div>
+            <div class="ele"> <h1 style="background-color: #333333;margin-top: 0px;padding: 5px;color: white;">Card four</h1>
+                <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati accusamus porro mollitia nobis aperiam error nulla repudiandae nesciunt animi?</p>
+            </div>
+            <div class="ele"> <h1 style="background-color: #333333;margin-top: 0px;padding: 5px;color: white;">Card five </h1>
+                <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati accusamus porro mollitia nobis aperiam error nulla repudiandae nesciunt animi?</p>
+            </div>
+        
+
+        </div>
+    </div>
+    <div class="right">
+        <p> Have you discovered all of the other excellent content on this website? </p>
+    </div>
+</body>
+</html>

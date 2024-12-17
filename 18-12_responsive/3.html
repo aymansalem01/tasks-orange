@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .full{
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+        .card{
+            display: flex;
+            width:  500px;
+            border: solid .1px #7190c2;
+            margin: 10px;
+
+        }
+        .l{
+            width: 35%;
+        }
+        .r{
+            width: 65%;
+            margin-left: 10px;
+            position: relative;
+        }
+        @media only screen and (max-width: 1000px){
+        .full{flex-wrap: wrap;}
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="card">
+            <div class="l"><img src="1.PNG" width="100%" height="300px"></div>
+                <div class="r">
+                    <i style="color: #b2a293; margin-top: 10px;" class="fa fa-lock" aria-hidden="true"> Members Only</i>
+                    <p style="margin-top: 0px; font-size: 20px;">Best Mountain Trails 2020</p>
+                <p style="color: #b2a293;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus eos labore aspernatur reprehenderit, laborum quae dicta, explicabo minus sed, quo quasi tempore! Aspernatur, est perspiciatis?</p>
+                <div style="display: flex; position: absolute;bottom: 20px;">
+                <div><i style="font-size: 50px;" class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                <div style="margin-left: 20px;"> <p> john Smith</p><p style="color: #bad3e6;">Aug 18</p></div>    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="l"><img src="2.PNG" width="100%" height="300px"></div>
+            <div class="r"><i style="color: #b2a293; margin-top: 10px;" class="fa fa-lock" aria-hidden="true"> Members Only</i>
+                <p style="margin-top: 0px; font-size: 20px;">15 Rivers In Norway</p>
+            <p style="color: #b2a293;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus eos labore aspernatur reprehenderit, laborum quae dicta, explicabo minus sed, quo quasi tempore! Aspernatur, est perspiciatis?</p>
+            <div style="display: flex; position: absolute;bottom: 20px;">
+                <div><i style="font-size: 50px;" class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                <div style="margin-left: 20px;"> <p> Karen Johnson</p><p style="color: #bad3e6;">Aug 10</p></div>    
+                </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="l"><img src="3.PNG" width="100%" height="300px"></div>
+            <div class="r"><i style="color: #b2a293; margin-top: 10px;" class="fa fa-lock" aria-hidden="true"> Members Only</i>
+                <p style="margin-top: 0px; font-size: 20px;">5 National Forwst across the U.S.</p>
+            <p style="color: #b2a293;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus eos labore aspernatur reprehenderit, laborum quae dicta, explicabo minus sed, quo quasi tempore! Aspernatur, est perspiciatis?</p>
+            <div style="display: flex; position: absolute;bottom: 20px;">
+                <div><i style="font-size: 50px;" class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                <div style="margin-left: 20px;"> <p> Rafael Martin</p><p style="color: #bad3e6;">Aug 18</p></div>    
+                </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
