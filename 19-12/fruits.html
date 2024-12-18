@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .left{
+            display: flex;
+        }
+        .left >div{
+            margin: 10px;
+
+        }
+        .right{
+            position: absolute;
+            right: 10px;
+            display: flex;
+        }
+        .right>div{
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: green;
+        }
+        .sec{
+            display: flex;
+            justify-content: center;
+
+        }
+        .sec>div{
+            margin: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .three{
+            /* background-color:#f5f5f5 ; */
+            width: 50%;
+            padding: 50px;
+            padding-left: 250px;
+            
+            /* background-image: url(mix.jpg);
+            background-repeat:no-repeat ; */
+            position: relative;
+        }
+        
+        .four{
+            display: flex;
+            justify-content: center;
+            height: 250px;
+        }
+        .four>div{
+            background-color:#f5f5f5 ;
+            margin: 10px;
+        }
+        .pho{
+            display: flex;
+        }
+        .pa{
+            position: relative;
+        }
+        .imo{
+            height: auto;
+        }
+        .hed{display: block; padding-right: 200px; padding-bottom: 200px;width: 200px; margin-left: 50px; position: absolute; top: 0;}
+        @media only screen and (max-width:1200px){
+            .three{padding-left: 0px;}
+
+        }
+        @media only screen and (max-width: 900px){
+            .right{display: none;}
+            .pho{display: none;}
+            .four{flex-wrap: wrap;}
+            .nav{display: block;}
+            .left{display: block; text-align: center;}
+            .sec{display: block; text-align: center;}
+            .imo{display: none;}
+            .hed{position: relative; text-align: center;background-color: #f5f5f5;padding: 200px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <div> <a href="#"> HOME</a> </div>
+            <div> <a href="#"> SHOP</a> </div>
+            <div> <a href="#"> PAGES</a> </div>
+            <div> <a href="#"> BLOG</a> </div>
+            <div> <a href="#"> CONTANT</a> </div>
+        </div>
+        <div class="right">
+            <div><i style="font-size: 20px;" class="fa fa-heart" aria-hidden="true"></i> </div>
+            <div> <i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
+            <div><p style="margin-top: 0px;">item:$150.00</p> </div>    
+        </div>
+    </div>
+    <div class="sec">
+        <div class="dropdown"><button class="dropbtn"><i style="margin-right: 10px;" class="fa fa-bars" aria-hidden="true"> </i> All departments <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <div class="dropdown-content" >
+            <a href="#">Fresh Meat</a>
+            <a href="#">Vegtables</a>
+            <a href="#">Fruit & Nut Gifts</a>
+            <a href="#">Fresh Berries</a>
+            <a href="#">Ocean Foods</a>
+            <a href="#">Butter&eggs</a>
+            <a href="#">Fastfood</a>
+            <a href="#">Fresh Onion</a>
+            <a href="#">Papayaya & Crisps</a>
+            <a href="#">Oarmeal</a>
+            <a href="#">Fresh Bananas</a>
+            </div></div>
+            <div class="dropdown" ><button class="dropbtn" style="background-color: white;color: black;border: solid .1px  ; "> All Categories <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            </div> 
+        <div>
+            <input style="padding: 18px;margin-left: -20px;" type="text" size="20" placeholder="What do you need?"> 
+            <button class="dropbtn" style="margin-left: -5px;"> SEARCH</button>
+        </div>
+        <div class="pho">
+            <div style="margin-right: 10px;"><i style="color: #4CAF50; font-size: 40px; margin-left: 10px;" class="fa fa-phone" aria-hidden="true"></i></div>
+            <div style="margin-top: -20px;"> 
+                <p>+65 11.199.888 </p>
+                <p style="margin-top: -10px;"> support 24/7 time </p>
+            </div>
+        </div>
+    </div>
+    <div  class="pa">
+    <div class="three" ><img src="mix.jpg" class="imo" >
+            <div class="hed">
+            <p style="color: #4CAF50; padding-top: 80px;">FRUIT FRESH</p>
+            <h1> Vegtable 100% Organic</h1>
+            <p> free pickup and Delivery Avaliable</p>
+            <button class="dropbtn" style="margin-top: 20px;"><a href="#" style="color: white;"> SHOP NOW</a> </button>
+            </div>
+        </div>
+    </div>
+        <div class="four">
+            <div> <div><img src="cat-3.jpg" height="150"></div>
+            <h3 style="text-align: center; background-color: white; padding: 10px; margin: 10px;">VEGTABLES</h3>
+        </div>
+        <div> <div><img src="jus.jpg" height="150"></div>
+        <h3 style="text-align: center; background-color: white; padding: 10px;">DRINK FRUITS</h3>
+    </div>
+    <div> <div><img src="cat-3.jpg" height="150"></div>
+    <h3 style="text-align: center; background-color: white; padding: 10px;">DRINK FRUITS</h3>
+</div>
+<div> <div><img src="cat-3.jpg" height="150"></div>
+<h3 style="text-align: center; background-color: white; padding: 10px;">FRESH FRUIT</h3>
+</div>
+
+        </div>
+</body>
+</html>
