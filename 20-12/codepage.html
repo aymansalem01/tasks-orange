@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav{
+            background-color: #0093a4;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            display: inline-block;
+            padding: 15px;
+        }
+        .left>a{
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+        }
+        .left>a:hover{
+            border-bottom: orange solid;
+        }
+        .right{
+            display: inline-block;
+            padding: 15px;
+        }
+        .right>a{
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+            border: white solid;
+            padding: 10px;
+        }
+        .first{
+            width: 100%;
+            text-align: center;
+            background-image: url(Music.png),linear-gradient(to left,#25164b,#030e55);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px;
+
+            
+        }
+        .first>*{
+            color: white;
+            padding: 20px;
+        }
+        .first>div>a{
+            text-decoration: none;
+            border: white solid;
+            padding: 10px;
+            margin-right: 15px;
+        }
+        .text{
+            background-color: rgb(0,0,0,.5);
+        }
+        .text>*{
+            padding: 25px;
+        }
+        .sec{
+
+        }
+        .num {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+        .num>div{
+            text-align: center;
+        }
+        .rob{
+            background-color: #0f1e2e;
+            display: flex;
+            justify-content: center;
+            gap: 20px ;
+        }
+        .fe{
+            display: flex;
+            margin-top: 20px;
+        }
+        .fe>*{
+            width: 100px;
+            height: auto;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+        }
+        .card>div{
+            width: 1000px;
+        }
+        .card1{
+            display: flex;
+            flex-direction: column;
+            min-width: 400px;
+            padding: 10px;
+        }
+        .insid1{
+            text-align: center; 
+            background-image:url(card2.png);
+            background-size: cover; 
+            background-repeat: no-repeat;
+            padding-top: 80px;
+        }
+        .insid2{
+            text-align: center; 
+            background-image:url(card1.png);
+            background-size: cover; 
+            background-repeat: no-repeat;
+            padding-top: 80px;
+        }
+        .insid3{
+            text-align: center; 
+            background-image:url(card4.png);
+            background-size: cover; 
+            background-repeat: no-repeat;
+            padding-top: 80px;
+        }
+        .insid4{
+            text-align: center; 
+            background-image:url(card3.png);
+            background-size: cover; 
+            background-repeat: no-repeat;
+            padding-top: 80px;
+        }
+        .game{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bo1{
+            display: inline-block;
+        }
+        .bo2{
+            display: inline-block;
+        }
+        .bo3{
+            display: inline-block;
+        }
+        .bo4{
+            display: inline-block;
+        }
+        .bot5{display: inline-block;}
+        
+        @media only screen and (max-width: 1200px){
+            .bo1{display: none;}
+            .bo2{display: none;}
+            .bo3{display: none;}
+            .bo4{display: none;}
+            .card{flex-wrap: wrap;}
+            .game{flex-wrap: wrap;}
+            .rob{flex-wrap: wrap;}
+            .num{flex-wrap: wrap;}
+        }
+        @media only screen and (max-width: 700px){
+            .bot5{display: none;}
+            .nav{justify-content: center;}
+
+        }
+
+    </style>
+</head>
+<body>
+    <!----nav-->
+    <div class="nav">
+        <div class="left">
+            <a href="#"> <img src="icon.png" height="30px"></a>
+            <a href="#"  class="bot5"> Learn</a>
+            <a href="#" class="bot5">Teach</a>
+            <a href="#" class="bot5">Districts</a>
+            <a href="#" class="bo4"> Stats</a>
+            <a href="#" class="bo3">Help Us</a>
+            <a href="#" class="bo2"> incubator</a>
+            <a href="#" class="bo1"> About</a>
+        </div>
+        <div class="right">
+            <a href="#" class="bot5"> New project <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a href="#" class="bot5"> sign in</a>
+            <a style="background-color: white; color: #0093a4;" href="#" class="bo4"> Create account</a>
+            <a href="#" style="border: none;" class="bo4"> <i style="font-size: 20px;" class="fa fa-question-circle" aria-hidden="true"></i></a>
+
+        </div>
+
+    </div>
+    <!------------------------------>
+    <!----------music back-->
+    <div class="first">
+        <div class="text">
+        <p> The Hour of code is here </p>
+        <h1>Music Lab: Jam Session </h1>
+        <p>Learn to code as you remix your favorite artists' tracks and </p>
+        <p>use AI to genrate your own beast</p>
+        <a href="#" style="background-color: white; color: black;"> Try activity</a>
+        <a href="#" style="color: white;"> Learn more</a>
+        <p >in partnership with <i class="fa fa-amazon" aria-hidden="true"></i> future engineer</p>
+    </div>
+    </div>
+    <!------------------------------>
+    <!------------num-->
+    <div class="sec">
+        <p style="text-align: center;">Every student in every schools should have the opportunty to learn computer scince</p>
+        <div class="num">
+            <div>
+                <h1>92M</h1>
+                <p>students on code.org</p>
+            </div>
+            <div>
+                <h1>39M</h1>
+                <p>of our students are young women</p>
+            </div>
+            <div>
+                <h1>330M</h1>
+                <p>projects created on code.org</p>
+            </div>
+            <div>
+                <h1>2.7M</h1>
+                <p>teachers use code.org</p>
+            </div>
+            <div>
+                <h1>50</h1>
+                <p>All 50 states support computer science</p>
+            </div>
+        </div>
+
+    </div>
+    <!------------------>
+    <!----robot--------->
+    <div class="rob">
+        <div style="color: white;">
+            <h5>Exploring Genrative AL</h5>
+            <p style="margin-top: -10px;">empower students with hands-on projects and ethical</p>
+            <p>insights into genrative AI</p>
+            <p>in partnersip with<i class="fa fa-amazon" aria-hidden="true"></i> future engineer </p>
+        </div>
+        <div class="fe">
+            <div style="">
+            <img src="Robot.png" width="200px"></div>
+            <div style="margin-left: 140px; margin-top: 40px;">
+            <a href="#" style="background-color: white;color: black; text-decoration: none; border: white solid; padding: 10px;"> learn more</a>
+        </div>
+        </div>
+    </div>
+    <!------------------>
+    <!-------cards-------->
+    <div class="card">
+        <!---------------first card-->
+        <div class="card1">
+            <div class="insid1">
+                <div style=" color: white; background-color: rgb(89,202,211,.9); margin-bottom: -17px;">
+                    <p>Hour of code </p>
+                    <p>Explore,play,and create!</p>
+                </div>
+            </div>
+            <div style="text-align: center; display: flex; flex-direction: column; background-color: #59cad3;">
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Try the Hour of code</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> About the Hour of code</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Host an Hour of code</a></div>
+
+            </div>
+
+
+        </div>
+        <!------------------------>
+        <!------second card-->
+        <div class="card1">
+            <div class="insid2">
+                <div style=" color: white; background-color: rgb(166,155,193,.9); margin-bottom: -17px;">
+                    <p>Student </p>
+                    <p>Explore our courses</p>
+                </div>
+            </div>
+            <div style="text-align: center; display: flex; flex-direction: column; background-color: #a69bc1;">
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> elemently school</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> middle school +</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> careers</a></div>
+
+            </div>
+
+
+        </div>
+        <!--------------------->
+        <!----------third card-->
+        <div class="card1">
+            <div class="insid3">
+                <div style=" color: white; background-color: rgb(1,137,187,.9); margin-bottom: -17px;">
+                    <p>Educators </p>
+                    <p>Teach your student</p>
+                </div>
+            </div>
+            <div style="text-align: center; display: flex; flex-direction: column; background-color: #59b9dc;">
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Elementary school</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Middle school</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> High school</a></div>
+
+            </div>
+
+
+        </div>
+        <!------------------>
+        <!------fourth card-->
+        <div class="card1">
+            <div class="insid4">
+                <div style=" color: white; background-color: rgb(179,184,31,.9); margin-bottom: -17px;">
+                    <p>Get involed</p>
+                    <p>Support divesrsity in computing</p>
+                </div>
+            </div>
+            <div style="text-align: center; display: flex; flex-direction: column; background-color: #b3b81f;">
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> See the stats</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Bring CS to your school</a></div>
+                <div style="padding: 20px;"><a style="text-decoration: none;color: white; " href="#"> Donate</a></div>
+
+            </div>
+
+
+        </div>
+        <!--------------->
+    </div>
+    <!---------------->
+    <!-------breake orange-->
+    <div style="text-align: center; background-color:#ffa400; color: white;">
+        <h4 style="padding: 10px;"> Over 330 million Code.org projects created</h4>
+    </div>
+    <!-------------------->
+    <!----------------game---->
+    <div class="game">
+        <div><a href="#"><img src="game1.png" ></a></div>
+        <div><a href="#"><img src="game2.png" ></a> </div>
+        <div> <a href="#"><img src="game3.png" ></a></div>
+        <div><a href="#"><img src="game4.png" ></a></div>
+        <div><a href="#"><img src="game5.png" ></a></div>
+        <div><a href="#"><img src="game6.png" ></a></div>
+        <div><a href="#"><img src="game1.png" ></a></div>
+        <div><a href="#"><img src="game2.png" ></a> </div>
+        <div> <a href="#"><img src="game3.png" ></a></div>
+        <div><a href="#"><img src="game4.png" ></a></div>
+        <div><a href="#"><img src="game5.png" ></a></div>
+        <div><a href="#"><img src="game6.png" ></a></div>
+    </div>
+    <!------------------------>
+    <!------thanks section-->
+    <div style="text-align: center;">
+        <h1>Code.ore thanks</h1>
+        <p>Amazon • The Ballmer Group • Coinbase • Google.org • Charlie Lee • Microsoft • Spiegel</p>
+        <p >Family Fund • Vista Equity Partners</p>
+        <br>
+        <a href="#" style="text-decoration: none; background-color:#8c52ba ; padding: 10px; color: white;" > Donate</a>
+        <br>
+        <br>
+        <a href="#" style="color: #8c52ba;">See more supporters</a>
+    </div>
+    <!------------------------------->
+</body>
+</html>
