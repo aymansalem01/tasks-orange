@@ -148,6 +148,26 @@
             display: inline-block;
         }
         .bot5{display: inline-block;}
+        .fot{
+            display: flex;
+            justify-content: center;
+        }
+        .link{
+            display: flex;
+            justify-content: center;
+        }
+        .link>a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            border-right: solid #808488;
+            padding-right: 10px;
+        }
+        footer{
+            background-color: #292f36;
+            padding: 15px;
+        }
         
         @media only screen and (max-width: 1200px){
             .bo1{display: none;}
@@ -357,5 +377,42 @@
         <a href="#" style="color: #8c52ba;">See more supporters</a>
     </div>
     <!------------------------------->
+    <!---------footer---------------->
+    <footer>
+        <div class="fot">
+            <div class="link" >
+                <a href="#"> Privacy policy</a>
+                <a href="#"> cookie Notic </a>
+                <a href="#"> Aabout </a>
+                <a href="#"> partners </a>
+                <a href="#"> blog </a>
+                <a href="#"> Donate</a>
+                <a href="#"> Store </a>
+                <a href="#"> Support </a>
+                <a href="#" style="border-right: none;"> Terms</a>
+            </div>
+            <div style="display: flex; flex-direction: column;gap: 10px ;">
+                <div>
+                <input list="en" name="en" value="en" style="text-align: center;">
+                    <datalist id="en">
+                        <option value="en">
+                        <option value="en">
+                        <option value="en">
+                        <option value="en">
+                        <option value="en">
+                    </datalist>
+                </div>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <i style="font-size: 25px; color: white;" class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i style="font-size: 25px; color: white;" class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i  style="font-size: 25px; color: white;" class="fa fa-instagram" aria-hidden="true"></i>
+                    <i style="font-size: 25px; color: white;" class="fa fa-medium" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; color: white;">.®Code.org, 2024. Code.org®, the CODE logo, Hour of Code® and CS Discoveries® are trademarks of Code.org."
+            Built on GitHub from Microsoft</p>
+            <h1 style="text-align: center; color: white;"> Powerd by <i class="fa fa-amazon" aria-hidden="true"></i> </h1>
+    </footer>
 </body>
 </html>
